@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 
@@ -10,11 +9,11 @@ class PredModel extends StatefulWidget {
 }
 
 class _PredModelState extends State<PredModel> {
-  late int bed,
-      bath,
-      sqftLiving,
-      sqftLot,
-      floors;
+   double bed = 0,
+      bath =0,
+      sqftLiving = 0,
+      sqftLot = 0,
+      floors = 0;
 
   var predValue = "";
 
@@ -62,7 +61,7 @@ class _PredModelState extends State<PredModel> {
                 labelText: 'Enter bedrooms',
               ),
               onChanged: (val) {
-                bed = double.parse(val) as int;
+                bed = double.parse(val) ;
               },
             ),
             TextField(
@@ -70,7 +69,7 @@ class _PredModelState extends State<PredModel> {
                 labelText: 'Enter bathrooms',
               ),
               onChanged: (val) {
-                bath = int.parse(val);
+                bath = double.parse(val) ;
               },
             ),
             TextField(
@@ -78,7 +77,7 @@ class _PredModelState extends State<PredModel> {
                 labelText: 'Enter sqft of house',
               ),
               onChanged: (val) {
-                sqftLiving = int.parse(val);
+                sqftLiving = double.parse(val);
               },
             ),
             TextField(
@@ -86,7 +85,7 @@ class _PredModelState extends State<PredModel> {
                 labelText: 'Enter sqft (parking)',
               ),
               onChanged: (val) {
-                sqftLot = int.parse(val);
+                sqftLot = double.parse(val);
               },
             ),
             TextField(
@@ -94,7 +93,7 @@ class _PredModelState extends State<PredModel> {
                 labelText: 'Enter floors',
               ),
               onChanged: (val) {
-                floors = int.parse(val);
+                floors = double.parse(val);
               },
             ),
 

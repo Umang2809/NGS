@@ -1,5 +1,5 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-
 import 'package:untitled/predict.dart';
 import 'package:untitled/help.dart';
 import 'package:untitled/count.dart';
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
    MyApp({Key? key}) : super(key: key);
 
 
-  @override
+   @override
   Widget build(BuildContext context) {
 
     // TODO: implement build
